@@ -10,13 +10,13 @@ a {
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("font/roboto/roboto-regular.ttf");
+	src: url("font/roboto/Roboto-Regular.ttf");
 	font-style: normal; 
 	font-weight: 400;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("font/roboto/roboto-medium.ttf");
+	src: url("font/roboto/Roboto-Medium.ttf");
 	font-style: normal; 
 	font-weight: 500;
 }
