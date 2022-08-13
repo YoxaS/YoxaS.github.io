@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Devias Kit</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<!--Верхний раздел-->	
+<header class="header">
+	
+	<div class="head_logo">
+		<div class="head_logo_img">
+			<img src="logo.png" alt="Логотип">
+			<p style="margin-left: 10px;">Devias Kit</p>
+		</div>
+	</div>
+	<div class="head_link">
+		<div class="head_link_core">
+			<button class="head_link_key">FREE</button>
+			<p style="margin-left: 10px;">See our PRO version for more design components
+			 &amp; coded in React follow this link: <a href="https://devias.io/products/devias-kit-pro">https://devias.io/products/devias-kit-pro</a></p>
+		</div>
+	</div>
+	<div class="head_login">
+		<div class="head_login_keys">
+			<img src="bell.png" alt="Уведомления">
+			<img src="enter.png" alt="Вход">
+		</div>
+	</div>
+		
+</header>
+
+<main class="page_core">
+	<div class="page_left">
+	
+		<div class="left_avatar">
+			<div class="left_avatar_core">
+				<div class="avatar_picture"><img src="avatar.png" alt="#" style="width: 100px; height: 100px;"></div>
+				<div class="avatar_name">Roman Kutepov</div>
+				<div class="avatar_spec">Brain Director</div>
+			</div>
+		</div>
+		<hr>
+		<div class="left_option">
+			<button style="margin-top: 10px;"><img src="dashboard.png" alt="#">Dashboard</button>
+			<button><img src="users.png" alt="#">Users</button>
+			<button><img src="products.png" alt="#">Products</button>
+			<button><img src="authentication.png" alt="#">Authentication</button>
+			<button><img src="typography.png" alt="#">Typography</button>
+			<button style="margin-bottom: 10px;"><img src="iconsimages.png" alt="#">Icons &amp; Images</button>
+		</div>
+		<hr>
+		<div class="left_support">
+			<div class="support_text">Support</div>
+			<div class="support_key"><button><img src="support.png" alt="#">Support</button></div>
+		</div>
+	
+	</div>
+	<div class="page_right">
+		<nav class="nav_menu">
+			<ul>
+				<li>Profile</li>
+				<li>Account</li>
+				<li>Price Plans</li>
+			</ul>
+		</nav>
+		<div class="main_core">
+			<div class="main_location">
+				<div class="location_head">
+					<div class="head_about">
+						<div class="head_name">
+							<span id="name_text">Adrian</span>
+							<span id="name_text_last">Stefan</span>
+						</div>
+						<div class="head_location">Rm. Valcea, Romania</div>
+						<div class="head_time">4:32PM (GMT-4)</div>
+					</div>
+					<div class="head_avatar">
+						<div class="head_avatar_core" id="look"><img src="avatar2.png" alt="аватар"></div>
+					</div>
+				</div>
+				<div class="location_foot">
+					<button class="location_key">upload picture</button>
+					<button class="location_key">remove picture</button>
+				</div>
+				
+			</div>
+			<div class="main_empty_up"></div>
+			<div class="main_empty_down"></div>
+			<div class="main_edit">
+				<div class="edit_head">
+					<div class="edit_head_title">Basic profile</div>
+					<div class="edit_head_info">The information can be edited from your profile page</div> 
+				</div>
+								
+				<div class="edit_core">
+					<div class="edit_core_box">
+						<input type="text" placeholder="First Name" id="name_first">
+						<span class="name_one">First Name</span>
+						<span style="font-size: 12px;
+						 font-weight: 400; color: rgba(0, 0, 0, 0.6); letter-spacing: 0.4px; margin-left: 16px;">Please specify the first name</span>
+					</div>
+					<div class="edit_core_box">
+						<input type="text" placeholder="Last Name" id="name_last">
+						<span class="name_one">Last Name</span>
+						<span style="font-size: 12px;
+						 font-weight: 400; color: rgba(0, 0, 0, 0.6); letter-spacing: 0.4px; margin-left: 16px;">Please specify the last name</span>
+					</div>
+					<div class="edit_core_box">
+						<input type="text" placeholder="Email">
+						<span class="name_one">Email</span>
+					</div>
+					<div class="edit_core_box">
+						<input type="text" placeholder="Phone Number">
+						<span class="name_one">Phone Number</span>
+					</div>
+					<div class="edit_core_box">
+						<input type="text" placeholder="Country">
+						<span class="name_one">Country</span>
+					</div>
+					<div class="edit_core_box">
+						<input type="text" placeholder="City">
+						<span class="name_one">City</span>
+					</div>
+				</div>
+<!--Скрипт - изменение данных профиля-->					
+				<script>
+					function save() {
+						let name = document.getElementById("name_first");
+						let nameLast = document.getElementById("name_last");
+						let nameText = document.getElementById("name_text");
+						let nameTextL = document.getElementById("name_text_last");
+						
+						if (name.oninput = true) {
+							nameText.innerHTML = name.value;
+						} 
+						if (nameLast.oninput = true) {
+							nameTextL.innerHTML = nameLast.value;
+						}
+					}
+				</script>
+<!--Скрипт - изменение данных профиля-->				
+				<div class="edit_foot"><button class="edit_foot_key" onclick="save()">save settings</button></div>
+			</div>
+			<div class="main_notifications">
+				<div class="noti_head">
+					<div class="noti_head_title">Notifications</div>
+					<div class="noti_head_info">Manage the notifications emailing</div>
+				</div>
+				<div class="noti_core">
+					<div class="noti_core_left">
+						<p style="color: #3A3B3F; font-weight: 500;">Notifications</p>
+						<div class="noti_inputs">
+							<input type="checkbox" id="email">
+							<label for="email">Email</label>
+						</div>
+						<div class="noti_inputs">
+							<input type="checkbox" id="push" checked>
+							<label for="push">Push notifications</label>
+							<p style="color: #66788A; font-size: 12px; font-weight: 400; margin-left: 32px;">For your mobile or tablet device</p>
+						</div>
+						<div class="noti_inputs">
+							<input type="checkbox" id="mess" checked>
+							<label for="mess">Text Messages</label>
+						</div>
+						<div class="noti_inputs">
+							<input type="checkbox" id="call" checked>
+							<label for="call">Phone Calls</label>
+						</div>
+					</div>
+					<div class="noti_core_right">
+						<p style="color: #3A3B3F; font-weight: 500;">Messages</p>
+						<div class="noti_inputs">
+							<input type="checkbox" id="email_mess">
+							<label for="email_mess">Email</label>
+						</div>
+						<div class="noti_inputs">
+							<input type="checkbox" id="push_mess">
+							<label for="push_mess">Push notifications</label>
+						</div>
+						<div class="noti_inputs">
+							<input type="checkbox" id="mess_mess">
+							<label for="mess_mess">Text Messages</label>
+						</div>
+					</div>
+				</div>
+				<div class="noti_foot"><button class="noti_foot_key">save</button></div>
+			</div>
+		</div>
+	</div>
+</main>
+	
+</body>
+</html>
