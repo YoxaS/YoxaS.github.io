@@ -636,7 +636,7 @@ a {
 		width: 100%;
 	}
 }
-@media (max-width: 368px) {
+@media (max-width: 370px) {
 	.head_logo {
 		width: 20%;
 	}
