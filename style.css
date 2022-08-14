@@ -636,7 +636,63 @@ a {
 		width: 100%;
 	}
 }
-
+@media (max-width: 368px) {
+	.head_logo {
+		width: 20%;
+	}
+	.head_logo p {
+		display: none;
+	}
+	.head_link {
+		padding: 0;
+		width: 70%;
+	}
+	.head_link_core {
+		margin: auto;
+		height: 100%;
+		width: 100%;
+	}
+	.head_login {
+		width: 20%;
+	}
+	.head_login_keys img {
+		margin: auto;
+	}
+	.left_avatar {
+		width: 30%;
+	}
+	.avatar_picture {
+		height: 50%;
+	}
+	.avatar_name {
+		margin-top: 10px;
+		height: 30%;
+	}
+	.left_option button {
+		margin: auto;
+	}
+	.support_text, .support_key {
+		padding: 3px;
+	}
+	.location_head {
+		width: 90%;
+	}
+	.head_name {
+		height: 50%;
+	}
+	.location_foot {
+		width: 100%;
+	}
+	.edit_core_box input {
+		width: 90%;
+	}
+	.noti_core {
+		min-height: 350px;
+	}
+	.noti_inputs {
+		margin-top: 40px;
+	}
+}
 
 
 
